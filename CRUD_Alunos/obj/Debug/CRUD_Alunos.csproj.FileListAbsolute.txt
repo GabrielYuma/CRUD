@@ -1,0 +1,13 @@
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\bin\Debug\CRUD_Alunos.exe.config
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\bin\Debug\CRUD_Alunos.exe
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\bin\Debug\CRUD_Alunos.pdb
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\bin\Debug\System.Data.SQLite.dll
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\bin\Debug\System.Data.SQLite.xml
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.csprojAssemblyReference.cache
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.Properties.Resources.resources
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.csproj.GenerateResource.cache
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.csproj.CopyComplete
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.exe
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.pdb
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.CrudWindow.resources
