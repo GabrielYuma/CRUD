@@ -10,21 +10,13 @@ using System.Data;
 
 namespace CRUD_Alunos
 {
-    class Database
+    public class Database
     {
-        public SQLiteConnection GetConnection()
-        {
-            if (!File.Exists("database.sqlite3"))
-            {
-                SQLiteConnection.CreateFile("database.sqlite3");
-                CreateTable();
-            }
-            return new SQLiteConnection(@"Data Source=database.sqlite3");
-        }
+        static DatabaseStart databasestart = new DatabaseStart();
 
         public void CreateTable()
         {
-            SQLiteConnection connect = GetConnection();
+            SQLiteConnection connect = databasestart.GetConnection();
             connect.Open();
             string query = @"CREATE TABLE FuncionarioTb (
                             ID INTEGER,
@@ -41,7 +33,7 @@ namespace CRUD_Alunos
         public DataTable SelectCommand()
         {   
 
-           SQLiteConnection connect = GetConnection();
+           SQLiteConnection connect = databasestart.GetConnection();
            connect.Open();
 
            SQLiteCommand command = new SQLiteCommand(@"SELECT * FROM FuncionarioTb", connect);
@@ -56,7 +48,7 @@ namespace CRUD_Alunos
 
         public void InsertData(string NOME, float SALARIO, int TEL)
         {
-            SQLiteConnection connect = GetConnection();
+            SQLiteConnection connect = databasestart.GetConnection();
             connect.Open();
 
             SQLiteCommand command = new SQLiteCommand(@"INSERT INTO FuncionarioTb (nomeFuncionario, salarioFuncionario, telFuncionario) VALUES (@nome, @salario, @telefone)", connect);            
@@ -70,7 +62,7 @@ namespace CRUD_Alunos
 
         public void UpdateData(int ID, string NOME, float SALARIO, int TEL)
         {
-            SQLiteConnection connect = GetConnection();
+            SQLiteConnection connect = databasestart.GetConnection();
             connect.Open();
 
             SQLiteCommand command = new SQLiteCommand(@"UPDATE FuncionarioTb SET nomeFuncionario = @nome, salarioFuncionario = @salario, telFuncionario = @telefone WHERE ID = @id", connect);
@@ -85,7 +77,7 @@ namespace CRUD_Alunos
 
         public void DeleteData(int ID)
         {
-            SQLiteConnection connect = GetConnection();
+            SQLiteConnection connect = databasestart.GetConnection();
             connect.Open();
 
             SQLiteCommand command = new SQLiteCommand(@"DELETE FROM FuncionarioTb WHERE ID=@id", connect);            

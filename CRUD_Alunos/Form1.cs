@@ -7,6 +7,7 @@ namespace CRUD_Alunos
     public partial class CrudWindow : Form
     {
         static Database database = new Database();
+        static DatabaseStart databasestart = new DatabaseStart();
         public CrudWindow()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace CRUD_Alunos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            database.GetConnection();
+            databasestart.GetConnection();
             if (new FileInfo("database.sqlite3").Length > 0) { GetFuncionarioRecord(); }           
         }
 
@@ -67,6 +68,11 @@ namespace CRUD_Alunos
                     break;
                 
             }
+            ClearFields();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
             ClearFields();
         }
     }

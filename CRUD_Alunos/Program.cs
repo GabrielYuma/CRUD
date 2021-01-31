@@ -16,7 +16,7 @@ namespace CRUD_Alunos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CrudWindow());
+            Application.Run(new Form2());
         }
     }
 }
