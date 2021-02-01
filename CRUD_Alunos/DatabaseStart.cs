@@ -17,8 +17,8 @@ namespace CRUD_Alunos
             if (!File.Exists("database.sqlite3"))
             {
                 SQLiteConnection.CreateFile("database.sqlite3");
-                database.CreateTable();
-                logindata.CreateTabe();
+                
+                
             }
             return new SQLiteConnection(@"Data Source=database.sqlite3");
         }

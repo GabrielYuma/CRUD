@@ -17,6 +17,7 @@ namespace CRUD_Alunos
         public Form2()
         {
             InitializeComponent();
+            logindata.CreateTabe();
         }
         LoginData logindata = new LoginData();
         private void btEntrar_Click(object sender, EventArgs e)

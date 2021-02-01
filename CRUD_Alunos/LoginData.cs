@@ -15,7 +15,7 @@ namespace CRUD_Alunos
         {
             SQLiteConnection connect = new SQLiteConnection(@"Data Source=database.sqlite3");
             connect.Open();            
-            SQLiteCommand command = new SQLiteCommand(@"CREATE TABLE DadosLogin (
+            SQLiteCommand command = new SQLiteCommand(@"CREATE TABLE IF NOT EXISTS DadosLogin (
                                                       ID INTEGER,
                                                       username VARCHAR(30),
                                                       password VARCHAR(30),

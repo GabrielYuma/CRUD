@@ -18,7 +18,7 @@ namespace CRUD_Alunos
         {
             SQLiteConnection connect = databasestart.GetConnection();
             connect.Open();
-            string query = @"CREATE TABLE FuncionarioTb (
+            string query = @"CREATE TABLE IF NOT EXISTS FuncionarioTb (
                             ID INTEGER,
                             nomeFuncionario VARCHAR(30),
                             salarioFuncionario float,
