@@ -19,6 +19,7 @@ namespace CRUD_Alunos
                                                       ID INTEGER,
                                                       username VARCHAR(30),
                                                       password VARCHAR(30),
+                                                      cargo INTEGER,
                                                       PRIMARY KEY (ID AUTOINCREMENT)
                                                       )", connect);
                      
@@ -44,13 +45,14 @@ namespace CRUD_Alunos
             return true;
         }
 
-        public void CadastraUsuario(string USER, string PASS)
+        public void CadastraUsuario(string USER, string PASS, int CARG)
         {
             SQLiteConnection connect = new SQLiteConnection(@"Data Source=database.sqlite3");
             connect.Open();
-            SQLiteCommand command = new SQLiteCommand(@"INSERT INTO DadosLogin (username, password) VALUES (@USER, @PASS)", connect);
+            SQLiteCommand command = new SQLiteCommand(@"INSERT INTO DadosLogin (username, password, cargo) VALUES (@USER, @PASS, @CARG)", connect);
             command.Parameters.AddWithValue("@USER", USER);
             command.Parameters.AddWithValue("@PASS", PASS);
+            command.Parameters.AddWithValue("@CARG", CARG);
             command.ExecuteNonQuery();
             connect.Close();
         }

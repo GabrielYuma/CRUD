@@ -42,11 +42,9 @@ namespace CRUD_Alunos
 
         private void btCadastro_Click(object sender, EventArgs e)
         {
-            
-            var username = tbUsername.Text;
-            var password = tbPassword.Text;
-            logindata.CadastraUsuario(username, password);
-            MessageBox.Show("Usuário cadastrado com sucesso!");
+            Cadastro form = new Cadastro();
+            this.Hide();
+            form.Show();
         }
     }
 }

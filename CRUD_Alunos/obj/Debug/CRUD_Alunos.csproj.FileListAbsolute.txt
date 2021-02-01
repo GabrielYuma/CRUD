@@ -12,3 +12,4 @@ C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.exe
 C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.pdb
 C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.CrudWindow.resources
 C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.Form2.resources
+C:\Users\gabri\Desktop\FrontEnd\CRUD_Alunos\obj\Debug\CRUD_Alunos.Cadastro.resources

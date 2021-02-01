@@ -68,6 +68,7 @@ namespace CRUD_Alunos
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(141, 20);
             this.tbPassword.TabIndex = 4;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
